@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Service\Interfaces;
+namespace App\Services\FactoryMethodService\Interfaces;
 
-interface TransportInterface
+interface TechnicInterface
 {
     public function realizationMovement(): string;
 

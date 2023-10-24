@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Service\FactoryMethodService\Classes;
+namespace App\Services\FactoryMethodService\Classes;
 
-use App\Service\Interfaces\TransportInterface;
+use App\Services\FactoryMethodService\Interfaces\TechnicInterface;
 
-class AutoFactory implements TransportInterface
+class Auto implements TechnicInterface
 {
     public function realizationMovement(): string
     {
