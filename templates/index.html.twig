@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Шаблоны банды четырёх {% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .pattern-element {
+            border: 1px solid green;
+            border-radius: 5px;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            float: left;
+            margin: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .pattern-element:hover{
+            box-shadow: 0 0 10px green;
+            background: greenyellow;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src='js/index.js'></script>
+{% endblock %}
+
+{% block body %}
+    <h1> {{ name }} </h1>
+    <h3> Порождающие шаблоны: </h3>
+    <a href="/factoryMethod">
+        <div class="pattern-element">
+            Фабричный метод
+        </div>
+    </a>
+    <div class="pattern-element">
+        Одиночка
+    </div>
+
+{% endblock %}
