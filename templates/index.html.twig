@@ -4,17 +4,36 @@
 
 {% block stylesheets %}
     <style>
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 100px;
+        }
+
         .pattern-element {
             border: 1px solid green;
-            border-radius: 5px;
+            border-radius: 10px;
             width: 200px;
             height: 100px;
-            line-height: 100px;
-            text-align: center;
-            float: left;
-            margin: 20px;
+            margin: 15px;
             font-size: 20px;
             cursor: pointer;
+            text-align: center;
+        }
+
+        .number{
+            display: block;
+            position: absolute;
+            line-height: normal;
+            margin: 5px;
         }
 
         .pattern-element:hover {
@@ -27,14 +46,105 @@
 {% block body %}
     <h1> {{ name }} </h1>
     <h3> Порождающие шаблоны: </h3>
-    <a href="/factoryMethod">
+    <section>
         <div class="pattern-element">
-            Фабричный метод
+            <div class="number">1</div>
+            <a href="/factoryMethod">Фабричный метод</a>
         </div>
-    </a>
-    <a href="/singleton">
+            <div class="pattern-element">
+                <div class="number">2</div>
+                <a href="/singleton">Одиночка</a>
+            </div>
+
         <div class="pattern-element">
-            Одиночка
+            <div class="number">3</div>
+            Абстрактная фабрика
         </div>
-    </a>
+        <div class="pattern-element">
+            <div class="number">4</div>
+            Строитель
+        </div>
+        <div class="pattern-element">
+            <div class="number">5</div>
+            Прототип
+        </div>
+    </section>
+    <h3> Структурные шаблоны: </h3>
+    <section>
+        <div class="pattern-element">
+            <div class="number">6</div>
+            Адаптер
+        </div>
+        <div class="pattern-element">
+            <div class="number">7</div>
+            Мост
+        </div>
+        <div class="pattern-element">
+            <div class="number">8</div>
+            Компоновщик
+        </div>
+        <div class="pattern-element">
+            <div class="number">9</div>
+            Декоратор
+        </div>
+        <div class="pattern-element">
+            <div class="number">10</div>
+            Фасад
+        </div>
+        <div class="pattern-element">
+            <div class="number">11</div>
+            Приспособленец
+        </div>
+        <div class="pattern-element">
+            <div class="number">12</div>
+            Заместитель
+        </div>
+    </section>
+    <h3> Шаблоны поведения: </h3>
+    <section>
+        <div class="pattern-element">
+            <div class="number">13</div>
+            Цепочка обязанностей
+        </div>
+        <div class="pattern-element">
+            <div class="number">14</div>
+            Команда
+        </div>
+        <div class="pattern-element">
+            <div class="number">15</div>
+            Интерпретатор
+        </div>
+        <div class="pattern-element">
+            <div class="number">16</div>
+            Итератор
+        </div>
+        <div class="pattern-element">
+            <div class="number">17</div>
+            Посредник
+        </div>
+        <div class="pattern-element">
+            <div class="number">18</div>
+            Хранитель
+        </div>
+        <div class="pattern-element">
+            <div class="number">19</div>
+            Наблюдатель
+        </div>
+        <div class="pattern-element">
+            <div class="number">20</div>
+            Посетитель
+        </div>
+        <div class="pattern-element">
+            <div class="number">21</div>
+            Состояние
+        </div>
+        <div class="pattern-element">
+            <div class="number">22</div>
+            Стратегия
+        </div>
+        <div class="pattern-element">
+            <div class="number">23</div>
+            Шаблонный метод
+        </div>
+    </section>
 {% endblock %}
