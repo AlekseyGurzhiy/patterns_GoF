@@ -17,15 +17,11 @@
             cursor: pointer;
         }
 
-        .pattern-element:hover{
+        .pattern-element:hover {
             box-shadow: 0 0 10px green;
             background: greenyellow;
         }
     </style>
-{% endblock %}
-
-{% block javascripts %}
-    <script type="text/javascript" src='js/index.js'></script>
 {% endblock %}
 
 {% block body %}
@@ -36,8 +32,9 @@
             Фабричный метод
         </div>
     </a>
-    <div class="pattern-element">
-        Одиночка
-    </div>
-
+    <a href="/singleton">
+        <div class="pattern-element">
+            Одиночка
+        </div>
+    </a>
 {% endblock %}
