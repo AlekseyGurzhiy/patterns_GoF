@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\FactoryMethodService\Classes;
+namespace App\Service\FactoryMethodService\Factories;
 
 use App\Service\Interfaces\TransportInterface;
 
